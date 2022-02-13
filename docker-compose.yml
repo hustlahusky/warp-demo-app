@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .infr/app/Dockerfile
+    environment:
+      XDEBUG_MODE: 'debug'
+      XDEBUG_CONFIG: 'idekey=demo client_host=host.docker.internal'
+    volumes:
+      - ./:/home/space/app
+      #- /tmp:/tmp
+    restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    depends_on:
+      - database
+    links:
+      - database:database
+    ports:
+      - '48888:8888'
+
+  database:
+    image: bitnami/postgresql:14
+    environment:
+      POSTGRESQL_DATABASE: 'demo'
+      POSTGRESQL_USERNAME: 'demo'
+      POSTGRESQL_PASSWORD: 'password'
+      PGPASSWORD: 'password'
+    volumes:
+      - pgdata:/bitnami/postgresql:delegated
+      - ./.infr/volumes/database/conf:/bitnami/postgresql/conf
+      - ./.infr/volumes/database/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    # Map postgres container port to host to connect using preferred tool (PhpStorm/DataGrip, etc.)
+    ports:
+      - '49855:5432'
+
+volumes:
+  pgdata:
+    driver: local

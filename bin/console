@@ -1,0 +1,28 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Console app entry-point
+ */
+
+declare(strict_types=1);
+
+use App\Infrastructure\Kernel;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+/** @var Kernel $kernel */
+$kernel = (require __DIR__ . '/../resources/kernel.php')();
+
+$kernel->configureConsoleApplication(
+    $app = new Application(),
+    $input = new ArgvInput(),
+    $output = new ConsoleOutput(),
+);
+
+$app->setAutoExit(false);
+
+$exitCode = $app->run($input, $output);
+
+exit(max(min(abs($exitCode), 255), 0));

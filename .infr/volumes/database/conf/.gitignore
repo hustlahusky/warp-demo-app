@@ -1,0 +1,4 @@
+*
+!.gitignore
+!postgresql.conf
+!conf.d

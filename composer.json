@@ -1,0 +1,77 @@
+{
+  "name": "hustlahusky/spaceonfire-demo-app",
+  "description": "Demo App",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Constantine Karnaukhov",
+      "email": "genteelknight@gmail.com",
+      "homepage": "https://hustlahusky.me",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "cycle/migrations": "^1.0",
+    "cycle/orm": "^1.8",
+    "cycle/schema-builder": "^1.1",
+    "laminas/laminas-config-aggregator": "^1.7",
+    "monolog/monolog": "^2.1",
+    "phpoption/phpoption": "^1.8",
+    "slim/psr7": "^1.5",
+    "slim/slim": "^4.9",
+    "spaceonfire/collection": "^3.0",
+    "spaceonfire/command-bus": "^3.0",
+    "spaceonfire/common": "^3.0",
+    "spaceonfire/container": "^3.0",
+    "spaceonfire/criteria": "^3.0",
+    "spaceonfire/cycle-bridge": "^3.0",
+    "spaceonfire/data-source": "^3.0",
+    "spaceonfire/exception": "^3.0",
+    "spaceonfire/monolog-bridge": "^3.0",
+    "spaceonfire/value-object": "^3.0",
+    "spiral/database": "^2.9",
+    "spiral/migrations": "^2.3",
+    "spiral/pagination": "^2.9",
+    "symfony/console": "^6.0",
+    "symfony/event-dispatcher": "^6.0",
+    "symfony/filesystem": "^6.0",
+    "symfony/lock": "^6.0",
+    "symfony/service-contracts": "^3.0",
+    "symfony/string": "^6.0",
+    "symfony/uid": "6.0",
+    "symfony/var-exporter": "6.0",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.0",
+    "roave/security-advisories": "dev-latest",
+    "spaceonfire/easy-coding-standard-bridge": "^3.0",
+    "symplify/easy-coding-standard": "^9.4"
+  },
+  "replace": {
+    "symfony/polyfill-php70": "*",
+    "symfony/polyfill-php71": "*",
+    "symfony/polyfill-php72": "*",
+    "symfony/polyfill-php73": "*",
+    "symfony/polyfill-php74": "*",
+    "symfony/polyfill-php80": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "codestyle": "php -d xdebug.mode=off -d memory_limit=512M `which ecs` check --ansi",
+    "lint": "php -d xdebug.mode=off -d memory_limit=512M `which phpstan` analyze --ansi"
+  }
+}

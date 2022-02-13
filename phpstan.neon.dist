@@ -1,0 +1,19 @@
+# Start command: composer install && composer dump-autoload --classmap-authoritative && vendor/bin/phpstan analyze
+
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+parameters:
+    level: 8
+    #tmpDir: var/cache/phpstan/
+    inferPrivatePropertyTypeFromConstructor: true
+    treatPhpDocTypesAsCertain: false
+    bootstrapFiles:
+        - resources/kernel.php
+    paths:
+        - bin/console
+        - resources/
+        - src/
+#    ignoreErrors:
+#        -
+#            message: '/^Class Symfony\\Component\\Mailer\\Bridge\\(.*) not found\.$/'
+#            path: src/Shared/Infrastructure/Mailer/MailerTransportFactory.php
