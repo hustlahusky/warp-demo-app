@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Spiral\Database\Driver\Postgres\PostgresDriver;
-use function spaceonfire\Common\Connection\buildDsn;
-use function spaceonfire\Common\Env\env;
+use Cycle\Database\Driver\Postgres\PostgresDriver;
+use function Warp\Common\Connection\buildDsn;
+use function Warp\Common\Env\env;
 
 return [
     'database' => [

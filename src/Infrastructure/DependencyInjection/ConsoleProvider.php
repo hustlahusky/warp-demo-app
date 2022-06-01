@@ -6,7 +6,7 @@ namespace App\Infrastructure\DependencyInjection;
 
 use App\Infrastructure\Console\GreetingCommand;
 use App\Infrastructure\Console\RefreshConfigCommand;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class ConsoleProvider extends AbstractServiceProvider
 {

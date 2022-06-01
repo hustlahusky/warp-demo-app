@@ -8,7 +8,7 @@ use Monolog\Formatter\JsonFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Psr\Log\LoggerInterface;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class MonologProvider extends AbstractServiceProvider
 {

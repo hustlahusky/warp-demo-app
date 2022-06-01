@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Application\Response;
 
-use spaceonfire\Collection\CollectionInterface;
-use spaceonfire\Criteria\CriteriaInterface;
-use spaceonfire\DataSource\EntityReaderInterface;
+use Warp\Collection\CollectionInterface;
+use Warp\Criteria\CriteriaInterface;
+use Warp\DataSource\EntityReaderInterface;
 
 final class ListResponseFactory
 {

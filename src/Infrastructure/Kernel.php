@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Infrastructure;
 
-use spaceonfire\Common\Kernel\AbstractKernel;
-use spaceonfire\Common\Kernel\ConsoleApplicationConfiguratorTrait;
+use Warp\Common\Kernel\AbstractKernel;
+use Warp\Common\Kernel\ConsoleApplicationConfiguratorTrait;
 
 final class Kernel extends AbstractKernel
 {
@@ -33,6 +33,7 @@ final class Kernel extends AbstractKernel
         yield DependencyInjection\ConsoleProvider::class;
         yield DependencyInjection\LockProvider::class;
         yield DependencyInjection\CycleOrmProvider::class;
+        yield DependencyInjection\MigratorProvider::class;
         yield DependencyInjection\MonologProvider::class;
         yield DependencyInjection\CqrsBusProvider::class;
         yield DependencyInjection\HttpProvider::class;

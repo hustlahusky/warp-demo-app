@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\DependencyInjection;
 
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\PersistingStoreInterface;
 use Symfony\Component\Lock\Store\FlockStore;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class LockProvider extends AbstractServiceProvider
 {

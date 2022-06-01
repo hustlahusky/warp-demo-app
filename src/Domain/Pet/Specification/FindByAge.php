@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Domain\Pet\Specification;
 
-use spaceonfire\Criteria\Expression\AbstractExpressionDecorator;
-use spaceonfire\Criteria\Expression\ExpressionFactory;
-use spaceonfire\ValueObject\Date\DateTimeImmutableValue;
+use Warp\Clock\DateTimeImmutableValue;
+use Warp\Criteria\Expression\AbstractExpressionDecorator;
+use Warp\Criteria\Expression\ExpressionFactory;
 use Webmozart\Expression\Expression;
 
 /**

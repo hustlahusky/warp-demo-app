@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Infrastructure\DependencyInjection;
 
 use App\Domain\ClockFacade;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class ClockProvider extends AbstractServiceProvider
 {

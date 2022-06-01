@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Laminas\ConfigAggregator\ConfigAggregator;
-use function spaceonfire\Common\Env\env;
+use function Warp\Common\Env\env;
 
 return [
     ConfigAggregator::ENABLE_CACHE => 'production' === APPLICATION_ENV,

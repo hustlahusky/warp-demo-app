@@ -7,7 +7,7 @@ namespace App\Infrastructure\DependencyInjection;
 use App\Infrastructure\ConfigFacade;
 use Laminas\ConfigAggregator\PhpFileProvider;
 use PhpOption\Some;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class ConfigProvider extends AbstractServiceProvider
 {

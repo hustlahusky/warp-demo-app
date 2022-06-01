@@ -6,9 +6,9 @@ namespace App\Infrastructure\DependencyInjection;
 
 use App\Infrastructure\CQRS\CommandBus;
 use App\Infrastructure\CQRS\QueryBus;
-use spaceonfire\Common\CQRS\Command\CommandBusInterface;
-use spaceonfire\Common\CQRS\Query\QueryBusInterface;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Common\CQRS\Command\CommandBusInterface;
+use Warp\Common\CQRS\Query\QueryBusInterface;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class CqrsBusProvider extends AbstractServiceProvider
 {

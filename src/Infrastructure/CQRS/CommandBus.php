@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace App\Infrastructure\CQRS;
 
 use Psr\Container\ContainerInterface;
-use spaceonfire\CommandBus\CommandBus as MessageBus;
-use spaceonfire\CommandBus\Mapping\ClassName\SuffixClassNameMapping;
-use spaceonfire\CommandBus\Mapping\CompositeMapping;
-use spaceonfire\CommandBus\Mapping\Method\StaticMethodNameMapping;
-use spaceonfire\CommandBus\Middleware\Logger\LoggerMiddleware;
-use spaceonfire\Common\CQRS\Command\AbstractCommandBus;
-use spaceonfire\Container\FactoryAggregateInterface;
-use spaceonfire\Container\InstanceOfAliasContainer;
+use Warp\CommandBus\CommandBus as MessageBus;
+use Warp\CommandBus\Mapping\ClassName\SuffixClassNameMapping;
+use Warp\CommandBus\Mapping\CompositeMapping;
+use Warp\CommandBus\Mapping\Method\StaticMethodNameMapping;
+use Warp\CommandBus\Middleware\Logger\LoggerMiddleware;
+use Warp\Common\CQRS\Command\AbstractCommandBus;
+use Warp\Container\FactoryAggregateInterface;
+use Warp\Container\InstanceOfAliasContainer;
 
 final class CommandBus extends AbstractCommandBus
 {

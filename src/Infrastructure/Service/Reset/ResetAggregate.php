@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\Service\Reset;
 
-use spaceonfire\Container\DefinitionAggregateInterface;
 use Symfony\Contracts\Service\ResetInterface;
+use Warp\Container\DefinitionAggregateInterface;
 
 /**
  * @implements \IteratorAggregate<ResetInterface>

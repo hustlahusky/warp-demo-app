@@ -6,8 +6,8 @@ namespace App\Domain;
 
 use Cycle\ORM\Promise\ReferenceInterface;
 use PhpOption\Option;
-use spaceonfire\Bridge\Cycle\EntityReference;
-use spaceonfire\DataSource\EntityReferenceInterface;
+use Warp\Bridge\Cycle\EntityReference;
+use Warp\DataSource\EntityReferenceInterface;
 
 abstract class EntityReferenceHelper
 {

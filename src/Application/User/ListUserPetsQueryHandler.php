@@ -9,8 +9,8 @@ use App\Application\Response\ListResponseFactory;
 use App\Domain\Pet\Pet;
 use App\Domain\Pet\Specification\FindByAge;
 use App\Domain\User\User;
-use spaceonfire\Criteria\Criteria;
-use spaceonfire\DataSource\EntityReaderAggregateInterface;
+use Warp\Criteria\Criteria;
+use Warp\DataSource\EntityReaderAggregateInterface;
 
 final class ListUserPetsQueryHandler
 {

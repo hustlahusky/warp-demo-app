@@ -8,7 +8,7 @@ parameters:
     inferPrivatePropertyTypeFromConstructor: true
     treatPhpDocTypesAsCertain: false
     bootstrapFiles:
-        - resources/kernel.php
+        - resources/phpstan.php
     paths:
         - bin/console
         - resources/

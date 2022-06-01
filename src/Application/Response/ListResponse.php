@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Application\Response;
 
-use spaceonfire\Common\CQRS\Query\ResponseInterface;
+use Warp\Common\CQRS\Query\ResponseInterface;
 
 /**
  * @template T

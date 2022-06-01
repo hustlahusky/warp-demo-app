@@ -12,8 +12,8 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Slim\ResponseEmitter;
-use spaceonfire\Common\Factory\StaticConstructorInterface;
 use Symfony\Contracts\Service\ResetInterface;
+use Warp\Common\Factory\StaticConstructorInterface;
 
 final class DefaultWorker implements BootstrapInterface, ResetInterface, RequestHandlerInterface, StaticConstructorInterface
 {

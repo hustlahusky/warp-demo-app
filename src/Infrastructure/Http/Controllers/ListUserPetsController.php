@@ -13,7 +13,7 @@ use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use spaceonfire\Common\CQRS\Query\QueryBusInterface;
+use Warp\Common\CQRS\Query\QueryBusInterface;
 
 final class ListUserPetsController implements RequestHandlerInterface
 {

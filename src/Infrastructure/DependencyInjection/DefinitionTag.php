@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\DependencyInjection;
 
-abstract class DefinitionTag extends \spaceonfire\Container\Factory\DefinitionTag
+abstract class DefinitionTag extends \Warp\Container\Factory\DefinitionTag
 {
     public const BOOTSTRAP = 'kernel.bootstrap';
 

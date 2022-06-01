@@ -8,10 +8,10 @@ use App\Domain\Pet\Pet;
 use App\Domain\Pet\PetId;
 use App\Domain\User\UserId;
 use App\Infrastructure\Pet\PetMapper;
-use spaceonfire\Bridge\Cycle\Schema\EntityDto;
-use spaceonfire\Bridge\Cycle\Schema\FieldDto;
-use spaceonfire\Bridge\Cycle\Schema\RelationDto;
-use Spiral\Database\Schema\AbstractColumn;
+use Cycle\Database\Schema\AbstractColumn;
+use Warp\Bridge\Cycle\Schema\EntityDto;
+use Warp\Bridge\Cycle\Schema\FieldDto;
+use Warp\Bridge\Cycle\Schema\RelationDto;
 
 return [
     EntityDto::ROLE => PetId::ROLE,

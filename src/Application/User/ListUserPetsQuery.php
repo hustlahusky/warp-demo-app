@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Application\User;
 
 use App\Domain\User\UserId;
-use spaceonfire\Common\CQRS\Query\QueryInterface;
+use Warp\Common\CQRS\Query\QueryInterface;
 
 final class ListUserPetsQuery implements QueryInterface
 {

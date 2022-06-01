@@ -12,12 +12,12 @@ use Laminas\Hydrator\NamingStrategy\MapNamingStrategy;
 use Laminas\Hydrator\NamingStrategy\NamingStrategyEnabledInterface;
 use Laminas\Hydrator\Strategy\ClosureStrategy;
 use Laminas\Hydrator\Strategy\StrategyEnabledInterface;
-use spaceonfire\Bridge\Cycle\Mapper\HydratorMapper;
-use spaceonfire\Bridge\Cycle\Mapper\MapperPluginInterface;
-use spaceonfire\Bridge\LaminasHydrator\Strategy\BlameStrategy;
-use spaceonfire\Bridge\LaminasHydrator\Strategy\DateValueStrategy;
-use spaceonfire\Bridge\LaminasHydrator\Strategy\ValueObjectStrategy;
-use spaceonfire\ValueObject\EmailValue;
+use Warp\Bridge\Cycle\Mapper\HydratorMapper;
+use Warp\Bridge\Cycle\Mapper\MapperPluginInterface;
+use Warp\Bridge\LaminasHydrator\Strategy\BlameStrategy;
+use Warp\Bridge\LaminasHydrator\Strategy\DateValueStrategy;
+use Warp\Bridge\LaminasHydrator\Strategy\ValueObjectStrategy;
+use Warp\ValueObject\EmailValue;
 
 /**
  * @see User

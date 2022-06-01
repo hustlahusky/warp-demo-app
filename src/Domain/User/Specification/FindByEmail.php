@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Domain\User\Specification;
 
-use spaceonfire\Criteria\Expression\AbstractExpressionDecorator;
-use spaceonfire\Criteria\Expression\ExpressionFactory;
-use spaceonfire\ValueObject\EmailValue;
+use Warp\Criteria\Expression\AbstractExpressionDecorator;
+use Warp\Criteria\Expression\ExpressionFactory;
+use Warp\ValueObject\EmailValue;
 
 final class FindByEmail extends AbstractExpressionDecorator
 {

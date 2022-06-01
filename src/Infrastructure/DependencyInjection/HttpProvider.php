@@ -11,7 +11,7 @@ use Slim\App;
 use Slim\Factory\AppFactory;
 use Slim\Handlers\ErrorHandler;
 use Slim\Interfaces\ErrorHandlerInterface;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class HttpProvider extends AbstractServiceProvider
 {

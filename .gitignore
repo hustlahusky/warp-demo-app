@@ -48,6 +48,5 @@ vendor
 node_modules
 docker-compose.override.yml
 auth.json
-phpstan.neon
 resources/.cycle_schema.php
 !.infr/volumes/database/docker-entrypoint-initdb.d/01-demo.sql

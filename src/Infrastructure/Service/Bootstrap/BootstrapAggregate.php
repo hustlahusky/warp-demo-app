@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\Service\Bootstrap;
 
-use spaceonfire\Container\DefinitionAggregateInterface;
+use Warp\Container\DefinitionAggregateInterface;
 
 /**
  * @implements \IteratorAggregate<BootstrapInterface>

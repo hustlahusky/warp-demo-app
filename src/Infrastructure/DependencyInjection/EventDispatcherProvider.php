@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Infrastructure\DependencyInjection;
 
 use Psr\EventDispatcher\EventDispatcherInterface as PsrEventDispatcherInterface;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface as SymfonyContractsEventDispatcherInterface;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class EventDispatcherProvider extends AbstractServiceProvider
 {

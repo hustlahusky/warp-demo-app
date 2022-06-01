@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Domain\User;
 
 use App\Domain\IdentityInterface;
-use spaceonfire\ValueObject\UuidValue;
+use Warp\ValueObject\UuidValue;
 
 final class UserId extends UuidValue implements IdentityInterface
 {

@@ -1,15 +1,18 @@
-version: '3'
+version: '3.9'
 
 services:
   app:
     build:
       context: .
       dockerfile: .infr/app/Dockerfile
+      target: development
+      args:
+        ALPINE_REPO: http://mirrors.edge.kernel.org/alpine/
     environment:
       XDEBUG_MODE: 'debug'
       XDEBUG_CONFIG: 'idekey=demo client_host=host.docker.internal'
     volumes:
-      - ./:/home/space/app
+      - ./:/home/warp/app
       #- /tmp:/tmp
     restart: unless-stopped
     extra_hosts:

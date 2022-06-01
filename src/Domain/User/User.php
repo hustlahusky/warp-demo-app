@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace App\Domain\User;
 
 use App\Domain\Pet\Pet;
-use spaceonfire\Collection\Collection;
-use spaceonfire\Collection\CollectionInterface;
-use spaceonfire\DataSource\Blame\BlamableInterface;
-use spaceonfire\DataSource\Blame\Blame;
-use spaceonfire\DataSource\Blame\BlameImmutable;
-use spaceonfire\DataSource\Blame\BlameImmutableInterface;
-use spaceonfire\DataSource\Blame\BlameInterface;
-use spaceonfire\DataSource\EntityEventsInterface;
-use spaceonfire\DataSource\EntityEventsTrait;
-use spaceonfire\ValueObject\EmailValue;
+use Warp\Collection\Collection;
+use Warp\Collection\CollectionInterface;
+use Warp\DataSource\Blame\BlamableInterface;
+use Warp\DataSource\Blame\Blame;
+use Warp\DataSource\Blame\BlameImmutable;
+use Warp\DataSource\Blame\BlameImmutableInterface;
+use Warp\DataSource\Blame\BlameInterface;
+use Warp\DataSource\EntityEventsInterface;
+use Warp\DataSource\EntityEventsTrait;
+use Warp\ValueObject\EmailValue;
 
 /**
  * @implements BlamableInterface<User>

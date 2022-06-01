@@ -1,4 +1,4 @@
-# Demo App by spaceonfire
+# Warp Components Demo
 
 ## Get Started
 

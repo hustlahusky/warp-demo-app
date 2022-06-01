@@ -8,7 +8,7 @@ use App\Infrastructure\Service\Bootstrap\BootstrapAggregate;
 use App\Infrastructure\Service\Reset\CycleOrmResetter;
 use App\Infrastructure\Service\Reset\MonologResetter;
 use App\Infrastructure\Service\Reset\ResetAggregate;
-use spaceonfire\Container\ServiceProvider\AbstractServiceProvider;
+use Warp\Container\ServiceProvider\AbstractServiceProvider;
 
 final class ServiceBootstrapResetProvider extends AbstractServiceProvider
 {

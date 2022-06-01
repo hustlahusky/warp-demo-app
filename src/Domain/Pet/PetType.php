@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Domain\Pet;
 
-use spaceonfire\ValueObject\AbstractEnumValue;
+use Warp\ValueObject\AbstractEnumValue;
 
 /**
  * @method static self dog()

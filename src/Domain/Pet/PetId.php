@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Domain\Pet;
 
 use App\Domain\IdentityInterface;
-use spaceonfire\ValueObject\UuidValue;
+use Warp\ValueObject\UuidValue;
 
 final class PetId extends UuidValue implements IdentityInterface
 {

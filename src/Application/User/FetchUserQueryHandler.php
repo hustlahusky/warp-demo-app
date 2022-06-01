@@ -6,7 +6,7 @@ namespace App\Application\User;
 
 use App\Application\Response\ItemResponse;
 use App\Domain\User\User;
-use spaceonfire\DataSource\EntityReaderAggregateInterface;
+use Warp\DataSource\EntityReaderAggregateInterface;
 
 final class FetchUserQueryHandler
 {

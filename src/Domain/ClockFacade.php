@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Domain;
 
-use spaceonfire\ValueObject\Date\ClockInterface;
-use spaceonfire\ValueObject\Date\FrozenClock;
-use spaceonfire\ValueObject\Date\SystemClock;
 use Symfony\Contracts\Service\ResetInterface;
+use Warp\Clock\ClockInterface;
+use Warp\Clock\FrozenClock;
+use Warp\Clock\SystemClock;
 
 final class ClockFacade implements ResetInterface
 {
